@@ -6,4 +6,4 @@ product = {
 product["price"] += 50
 product["stock"] -= 3
 
-print(product)
+print(product["name"])
