@@ -35,18 +35,18 @@ while True:
                 found = True
                 break
             if not found:
-              print("指定された商品は見つかりませんでした。")
+                print("指定された商品は見つかりませんでした。")
     elif choice == "4":
         change_name = input("変更する商品名：")
         found = False
         for product in products:
             if product['name'] == change_name:
-              print(f"現在の在庫数：{product['stock']}")
-              new_stock = int(input("新しい在庫数："))
-              product['stock'] = new_stock
-              print(f"{change_name}の在庫数を{new_stock}に変更しました。")
-              found = True
-              break
+                print(f"現在の在庫数：{product['stock']}")
+                new_stock = int(input("新しい在庫数："))
+                product['stock'] = new_stock
+                print(f"{change_name}の在庫数を{new_stock}に変更しました。")
+                found = True
+                break
         if not found:
             print("指定された商品は見つかりませんでした。")
     elif choice == "5":
